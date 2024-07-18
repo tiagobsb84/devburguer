@@ -1,5 +1,7 @@
 # devburguer
 
+#Back-end
+
 ## tecnologias e ferramentas utilizadas
 -> yarn versão 1.22.22
 -> VScode IDE
@@ -10,6 +12,8 @@
 -> Postgres
 -> Sequelize 
 -> UUID v4 (para o ID)
+-> bcrypt (para criptografar a senha)
+
 
 
 
