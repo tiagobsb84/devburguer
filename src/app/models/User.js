@@ -24,6 +24,11 @@ class User extends Model {
 
         return this;
     }
+
+    //metodo usado para compara se password, para ser usado na sessionController login.
+    async comparePassword(password) {
+        return bcrypt.compare(password, this.password_hash);
+    }
 }
 
 export default User;
