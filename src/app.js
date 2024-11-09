@@ -1,5 +1,6 @@
 import express from 'express';
 import routes from './routes';
+import { resolve } from 'node:path';
 
 import './database';
 
@@ -14,6 +15,12 @@ class App {
 
     middleware() {
         this.app.use(express.json());
+
+        //Esse para trazer a imagem através da url a imagem do produto
+        this.app.use(
+            '/product-file',
+            express.static(resolve(__dirname,'..', 'uploads'))
+        );
     }
 
     routes() {
