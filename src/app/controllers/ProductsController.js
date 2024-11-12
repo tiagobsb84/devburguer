@@ -1,4 +1,4 @@
-import * as Yup from 'yup';
+import * as Yup from 'Yup';
 import Product from '../models/Product';
 
 class ProductsController {
